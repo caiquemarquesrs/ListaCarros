@@ -38,13 +38,17 @@ public class ListaAdapter extends ArrayAdapter<Pessoa> {
         Pessoa pessoa = listaPessoas.get(position);
 
         TextView txtNome = convertView.findViewById(R.id.txt01);
-        TextView txtMatricula = convertView.findViewById(R.id.txt02);
-        TextView txtStatus = convertView.findViewById(R.id.txt03);
+        TextView txtWdc = convertView.findViewById(R.id.txt02);
+        TextView txtWins = convertView.findViewById(R.id.txt03);
         ImageView imgIcon = convertView.findViewById(R.id.img);
+        TextView txtPodiuns = convertView.findViewById(R.id.txt04);
+        TextView txtPoles = convertView.findViewById(R.id.txt05);
 
         txtNome.setText(pessoa.getNome());
-        txtMatricula.setText(pessoa.getMatricula());
-        txtStatus.setText(pessoa.getStatus());
+        txtWdc.setText(pessoa.getWdc());
+        txtWins.setText(pessoa.getWins());
+        txtPodiuns.setText(pessoa.getPodiuns());
+        txtPoles.setText(pessoa.getPoles());
 
         // Definir imagem (precisa estatr em drawable)
         //imgIcon.setImageResource(R.drawable.ic_launcher_foreground);
