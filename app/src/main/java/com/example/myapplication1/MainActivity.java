@@ -44,13 +44,23 @@ public class MainActivity extends AppCompatActivity {
         Pessoa stroll = new Pessoa("Lance Stroll",
                 "WDC: 0", "WINS: 0", "lance_stroll", "PODIUMS: 3", "POLES: 1");
         Pessoa hulkenberg = new Pessoa("Nico Hulkenberg",
-                "WDC: 0", "WINS: 0", "nico_hulkenberg", "PODIUMS: 0", "POLES: 1");
+                "WDC: 0", "WINS: 0", "nico_kulkenberg", "PODIUMS: 0", "POLES: 1");
         Pessoa bearman = new Pessoa("Oliver Bearman",
                 "WDC: 0", "WINS: 0", "oliver_bearman", "PODIUMS: 0", "POLES: 0");
         Pessoa tsunoda = new Pessoa("Yuki Tsunoda",
                 "WDC: 0", "WINS: 0", "yuki_tsunoda", "PODIUMS: 0", "POLES: 0");
-        Pessoa tsunoda = new Pessoa("Yuki Tsunoda",
-                "WDC: 0", "WINS: 0", "yuki_tsunoda", "PODIUMS: 0", "POLES: 0");
+        Pessoa sainz = new Pessoa("Carlos Sainz",
+                "WDC: 0", "WINS: 4", "carlos_sainz", "PODIUMS: 27", "POLES: 6");
+        Pessoa hadjar = new Pessoa("Isack Hadjar",
+                "WDC: 0", "WINS: 0", "isack_hadjar", "PODIUMS: 0", "POLES: 0");
+        Pessoa gasly = new Pessoa("Pierre Gasly",
+                "WDC: 0", "WINS: 1", "pierre_gasly", "PODIUMS: 5", "POLES: 0");
+        Pessoa lawson = new Pessoa("Liam Lawson",
+                "WDC: 0", "WINS: 0", "liam_lawson", "PODIUMS: 0", "POLES: 0");
+        Pessoa doohan = new Pessoa("Jack Doohan",
+                "WDC: 0", "WINS: 0", "jack_doohan", "PODIUMS: 0", "POLES: 0");
+        Pessoa bortoleto = new Pessoa("Gabriel Bortoleto",
+                "WDC: 0", "WINS: 0", "gabriel_bortoleto", "PODIUMS: 0", "POLES: 0");
 
 
         ArrayList<Pessoa> pessoas = new ArrayList<>();
@@ -67,6 +77,12 @@ public class MainActivity extends AppCompatActivity {
         pessoas.add(hulkenberg);
         pessoas.add(bearman);
         pessoas.add(tsunoda);
+        pessoas.add(sainz);
+        pessoas.add(hadjar);
+        pessoas.add(gasly);
+        pessoas.add(lawson);
+        pessoas.add(doohan);
+        pessoas.add(bortoleto);
 
         ListaAdapter adapter = new ListaAdapter(this, R.layout.layout_lista, pessoas);
         lista.setAdapter(adapter);
